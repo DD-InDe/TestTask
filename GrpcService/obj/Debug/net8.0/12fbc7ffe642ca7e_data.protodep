@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Data.cs \
+obj\Debug\net8.0\Protos/DataGrpc.cs: Protos/data.proto
