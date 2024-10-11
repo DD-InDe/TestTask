@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService";
+
+package data_v1;
+
+service DataV1{
+  rpc PostData(Request) returns (Reply);
+}
+
+message Request{
+  int32 PacketSeqNum = 1;
+  Packet PacketData = 2;
+  string PacketTimeStamp = 3;
+  int32 NRecords = 4;
+}
+
+message Packet{
+  repeated Data Data = 1;
+}
+
+message Data{
+  double Decimal1 = 1;
+  double Decimal2 = 2;
+  double Decimal3 = 3;
+  double Decimal4 = 4;
+}
+
+message Reply{
+  int32 StatusCode = 1;
+}

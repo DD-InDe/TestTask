@@ -12,3 +12,12 @@ C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\refint\G
 C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.pdb
 C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.genruntimeconfig.cache
 C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\ref\GrpcClient.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.csproj.AssemblyReference.cache
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.csproj.Up2Date
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\Resources\config.json
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\Resources\packageinfo.txt
