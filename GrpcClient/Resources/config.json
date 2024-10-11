@@ -1,3 +1,6 @@
 {
-
+  "totalPackets": 12,
+  "recordsInPacket": 4,
+  "grpcServerAddress": "localhost",
+  "grpcServerPort": 3000
 }

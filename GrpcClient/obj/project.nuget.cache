@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "4ol31SZsDFpuYoVaOFrNzJ/VOzpiUdAi7OW646H3g3laFGVe32v6KmYeOEnG2oDQkrX2+6PLI08uq07scWcZ3A==",
+  "dgSpecHash": "t8dvVfotbmvpiGxILfJpt3sd7OBAhx09xitb+IxNzIVXv34tARLoG9o0dnaQ3htm1AfOyo3cjXKZB8qiPSMStA==",
   "success": true,
   "projectFilePath": "C:\\Users\\alena\\RiderProjects\\ServiceProject\\GrpcClient\\GrpcClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\alena\\.nuget\\packages\\google.protobuf\\3.28.2\\google.protobuf.3.28.2.nupkg.sha512",
+    "C:\\Users\\alena\\.nuget\\packages\\grpc.core.api\\2.66.0\\grpc.core.api.2.66.0.nupkg.sha512",
+    "C:\\Users\\alena\\.nuget\\packages\\grpc.net.client\\2.66.0\\grpc.net.client.2.66.0.nupkg.sha512",
+    "C:\\Users\\alena\\.nuget\\packages\\grpc.net.common\\2.66.0\\grpc.net.common.2.66.0.nupkg.sha512",
+    "C:\\Users\\alena\\.nuget\\packages\\grpc.tools\\2.67.0\\grpc.tools.2.67.0.nupkg.sha512",
+    "C:\\Users\\alena\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
