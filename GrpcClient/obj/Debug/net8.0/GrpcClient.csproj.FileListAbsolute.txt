@@ -1,0 +1,14 @@
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\GrpcClient.exe
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\GrpcClient.deps.json
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\GrpcClient.runtimeconfig.json
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\GrpcClient.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\bin\Debug\net8.0\GrpcClient.pdb
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.AssemblyInfoInputs.cache
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.AssemblyInfo.cs
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.csproj.CoreCompileInputs.cache
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\refint\GrpcClient.dll
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.pdb
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\GrpcClient.genruntimeconfig.cache
+C:\Users\alena\RiderProjects\ServiceProject\GrpcClient\obj\Debug\net8.0\ref\GrpcClient.dll

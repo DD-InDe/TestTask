@@ -1,0 +1,31 @@
+﻿version: '3.4'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: grpc_bd
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "4444:5432"
+  
+  grpcservice:
+    image: grpcservice
+    build:
+      context: .
+      dockerfile: GrpcService/Dockerfile
+    environment:
+      ConnectionString: "Host=db;Port=5432;Database=grpc_bd;Username=postgres;Password=admin"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  grpcclient:
+    image: grpcclient
+    build:
+      context: .
+      dockerfile: GrpcClient/Dockerfile
+    depends_on:
+      - grpcservice
