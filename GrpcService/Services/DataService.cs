@@ -37,7 +37,7 @@ public class DataService(ILogger<DataService> logger, GrpcDbContext dbContext) :
             await dbContext.GrpcData.AddRangeAsync(dataList);
             await dbContext.SaveChangesAsync();
             
-            return await Task.FromResult(new Reply());
+            return await Task.FromResult(new Reply(){StatusCode = 200});
         }
         catch (Exception e)
         {

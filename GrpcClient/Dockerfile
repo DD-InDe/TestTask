@@ -17,5 +17,9 @@ RUN dotnet publish "GrpcClient.csproj" -c $BUILD_CONFIGURATION -o /app/publish /
 
 FROM base AS final
 WORKDIR /app
+
+COPY ./GrpcClient/Resources/config.json /app/Resources/config.json
+COPY ./GrpcClient/Resources/packageinfo.txt /app/Resources/packageinfo.txt
+
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "GrpcClient.dll"]

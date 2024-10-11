@@ -27,4 +27,13 @@
       <Protobuf Include="Protos\data_v1.proto" GrpsServices="Client"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Resources\config.json">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\packageinfo.txt">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

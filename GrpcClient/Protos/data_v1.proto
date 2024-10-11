@@ -27,5 +27,5 @@ message Data{
 }
 
 message Reply{
-
+  int32 StatusCode = 1;
 }

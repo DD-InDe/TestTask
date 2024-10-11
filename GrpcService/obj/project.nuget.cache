@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h0mzFjKN5+/QW+YvVTpX0KdwvpNeY9fyoH3eEA5miK/mhu6/zHZFj/IkawV+Ll26z9XOOxQqvX1ZtBvRu/S+Cw==",
+  "dgSpecHash": "oVze4EmjaEyulwmlm6YmOLhycBpKV372psq7NPT/RSpLLpT/MXwiPOrf5WZZ7F5u1Knx88uAvlymBL4W8Pw93A==",
   "success": true,
   "projectFilePath": "C:\\Users\\alena\\RiderProjects\\ServiceProject\\GrpcService\\GrpcService.csproj",
   "expectedPackageFiles": [

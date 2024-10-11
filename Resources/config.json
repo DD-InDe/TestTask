@@ -1,6 +1,0 @@
-{
-  "totalPackets": 12,
-  "recordsInPacket": 4,
-  "grpcServerAddress": "host.docker.internal",
-  "grpcServerPort": 8080
-}

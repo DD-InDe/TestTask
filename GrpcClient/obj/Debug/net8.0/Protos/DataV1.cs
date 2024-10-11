@@ -29,16 +29,17 @@ namespace GrpcClient {
             "YV92MS5QYWNrZXQSFwoPUGFja2V0VGltZVN0YW1wGAMgASgJEhAKCE5SZWNv",
             "cmRzGAQgASgFIiUKBlBhY2tldBIbCgREYXRhGAEgAygLMg0uZGF0YV92MS5E",
             "YXRhIk4KBERhdGESEAoIRGVjaW1hbDEYASABKAESEAoIRGVjaW1hbDIYAiAB",
-            "KAESEAoIRGVjaW1hbDMYAyABKAESEAoIRGVjaW1hbDQYBCABKAEiBwoFUmVw",
-            "bHkyNgoGRGF0YVYxEiwKCFBvc3REYXRhEhAuZGF0YV92MS5SZXF1ZXN0Gg4u",
-            "ZGF0YV92MS5SZXBseUINqgIKR3JwY0NsaWVudGIGcHJvdG8z"));
+            "KAESEAoIRGVjaW1hbDMYAyABKAESEAoIRGVjaW1hbDQYBCABKAEiGwoFUmVw",
+            "bHkSEgoKU3RhdHVzQ29kZRgBIAEoBTI2CgZEYXRhVjESLAoIUG9zdERhdGES",
+            "EC5kYXRhX3YxLlJlcXVlc3QaDi5kYXRhX3YxLlJlcGx5Qg2qAgpHcnBjQ2xp",
+            "ZW50YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcClient.Request), global::GrpcClient.Request.Parser, new[]{ "PacketSeqNum", "PacketData", "PacketTimeStamp", "NRecords" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcClient.Packet), global::GrpcClient.Packet.Parser, new[]{ "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcClient.Data), global::GrpcClient.Data.Parser, new[]{ "Decimal1", "Decimal2", "Decimal3", "Decimal4" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcClient.Reply), global::GrpcClient.Reply.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcClient.Reply), global::GrpcClient.Reply.Parser, new[]{ "StatusCode" }, null, null, null, null)
           }));
     }
     #endregion
@@ -894,6 +895,7 @@ namespace GrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Reply(Reply other) : this() {
+      statusCode_ = other.statusCode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -901,6 +903,18 @@ namespace GrpcClient {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Reply Clone() {
       return new Reply(this);
+    }
+
+    /// <summary>Field number for the "StatusCode" field.</summary>
+    public const int StatusCodeFieldNumber = 1;
+    private int statusCode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int StatusCode {
+      get { return statusCode_; }
+      set {
+        statusCode_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -918,6 +932,7 @@ namespace GrpcClient {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (StatusCode != other.StatusCode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -925,6 +940,7 @@ namespace GrpcClient {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (StatusCode != 0) hash ^= StatusCode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -943,6 +959,10 @@ namespace GrpcClient {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (StatusCode != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(StatusCode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -953,6 +973,10 @@ namespace GrpcClient {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (StatusCode != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(StatusCode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -963,6 +987,9 @@ namespace GrpcClient {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (StatusCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StatusCode);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -974,6 +1001,9 @@ namespace GrpcClient {
     public void MergeFrom(Reply other) {
       if (other == null) {
         return;
+      }
+      if (other.StatusCode != 0) {
+        StatusCode = other.StatusCode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -994,6 +1024,10 @@ namespace GrpcClient {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 8: {
+            StatusCode = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -1013,6 +1047,10 @@ namespace GrpcClient {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 8: {
+            StatusCode = input.ReadInt32();
+            break;
+          }
         }
       }
     }
