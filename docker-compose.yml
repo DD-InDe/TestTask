@@ -16,9 +16,9 @@ services:
       context: .
       dockerfile: GrpcService/Dockerfile
     environment:
-      ConnectionString: "Host=db;Port=5432;Database=grpc_bd;Username=postgres;Password=admin"
+      ConnectionString: "Host=db;Port=5432;Database=grpc_db;Username=postgres;Password=admin"
     ports:
-      - "8080:8080"
+      - "8080:8080" 
     depends_on:
       - db
 
