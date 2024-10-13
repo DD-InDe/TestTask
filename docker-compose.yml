@@ -31,3 +31,5 @@ services:
       dockerfile: GrpcClient/Dockerfile
     depends_on:
       - grpcservice
+    volumes:
+      - .data:/app/data

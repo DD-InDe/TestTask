@@ -6,4 +6,5 @@ public class AppSettings
     public int RecordsInPacket { get; set; }
     public string GrpcServerAddress { get; set; }
     public int GrpcServerPort { get; set; }
+    public int TimeInterval { get; set; }
 }
