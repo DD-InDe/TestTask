@@ -1,6 +1,6 @@
 {
-  "totalPackets": 12,
-  "recordsInPacket": 4,
+  "totalPackets": 2,
+  "recordsInPacket": 3,
   "grpcServerAddress": "http://host.docker.internal",
   "grpcServerPort": 8080,
   "timeInterval": 10

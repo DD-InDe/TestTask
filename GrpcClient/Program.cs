@@ -48,7 +48,7 @@ try
             File.WriteAllText(pathPackageInfoFile,packetNum.ToString());
             
             var reply = await client.PostDataAsync(request);
-            Console.WriteLine($"Статус {i} пакета: {reply.StatusCode}");
+            Console.WriteLine($"Статус {i+1} пакета: {reply.StatusCode}");
 
             await Task.Delay(TimeSpan.FromSeconds(settings.TimeInterval));
         }
